@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maven Coding Test</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      font-family: "Open Sans", sans-serif;
+    }
+
+    body {
+      display: flex !important;
+      justify-content: center;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .form-2 {
+      margin-top: 2rem;
+    }
+
+    #app {
+      margin-top: 1rem;
+    }
+
+    #secondApp {
+      max-width: 100%;
+      display: flex;
+      align-items: flex-end;
+      flex-wrap: wrap;
+    }
+
+    #secondApp > div {
+      margin: 20px 2px;
+      flex: 1 0 auto;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Maven Hiring Test - Logic 1</h1>
+    <form onsubmit="return generateInput()">
+      <input type="number" id="input" onkeypress="return checkInput(event,'0',this)">
+      <button type="submit">Generate</button>
+    </form>
+    <div id="app"></div>
+  
+    <form onsubmit="return false" class="form-2">
+      <h1>Maven Hiring Test - Logic 2</h1>
+      <input type="number" id="second-input">
+      <button id="startBtn">Start</button>
+      <button id="stopBtn">Stop</button>
+    </form>
+    <div id="secondApp"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
